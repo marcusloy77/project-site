@@ -1,0 +1,63 @@
+:root {
+  --col2: #2c3531;
+  --col4: #116466;
+  --col3:  #d9b08c;
+  --col1: #ffcb9a;
+  --col5: #d1e8e2;
+}
+
+
+.projects {
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 80px;
+  color: var(--col5);
+}
+
+.appLink {
+  color: var(--col3);
+}
+
+.links {
+  margin-bottom: 30px;
+}
+
+.project {
+  display: grid;
+  grid-template-columns: 5fr 1fr 5fr;
+  margin-bottom: 50px;
+  border: 3px solid var(--col5);
+  border-radius: 25px;
+  background-color: rgba(24, 0, 0, 0.3);
+  padding: 10px;
+  overflow: hidden;
+}
+
+h2 {
+  font-size: 35px;
+  color: var(--col5);
+}
+
+.projPic1 {
+  width: 380px;
+  border-radius: 15px;
+}
+
+.proj-title {
+  font-size: 25px;
+}
+
+.proj-left-col {
+  text-align: left;
+}
+
+@media (max-width: 800px) {
+  .project {
+    display: block;
+  }
+  .projects {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 100px;
+  }
+}

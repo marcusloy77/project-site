@@ -1,0 +1,111 @@
+:root {
+  --col2: #2c3531;
+  --col4: #116466;
+  --col3:  #d9b08c;
+  --col1: #ffcb9a;
+  --col5: #d1e8e2;
+}
+
+body {
+  background-color: var(--col2);
+}
+
+.App {
+  text-align: center;
+}
+
+.nav-op {
+  text-decoration-line: none;
+  font-size: 20px;
+  color: inherit;
+  padding-bottom: 3px;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+.clicked {
+  border-bottom: 3px solid aliceblue;
+}
+
+.nav-word {
+  font-size: 22px;
+}
+.nav-elem {
+  padding-top: 8px;
+  color: aliceblue;
+}
+
+nav {
+  background-color: var(--col4);
+  overflow: hidden;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  height: 40px;
+  color: aliceblue;
+  border-bottom: #d1e8e2 1px solid;
+  display: flex;
+  justify-content: space-evenly;
+}
+.nav-elem:hover {
+  animation-name: nav-hover;
+  animation-duration: 0.55s;
+  background-color: var(--col5);
+  color: black;
+}
+
+
+@keyframes nav-hover {
+  from {
+    background-color: var(--col2);
+    color: aliceblue;
+  }
+  to {
+    background-color: var(--col5);
+    color: black;
+  }
+}
+
+
+
+
+.contents {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.name {
+  color: var(--col1);
+  font-size: 35px;
+}
+.description {
+  color: var(--col1);
+  font-size: 25px;
+}
+@media (min-width: 1000px) {
+  .spacer {
+    width: 10%;
+  }
+  .spacer2 {
+    width: 10%;
+  }
+}
+
+@media (max-width: 800px) {
+  .nav-word {
+    display: none;
+  }
+  .nav-op {
+
+    height: 30px;
+    font-size: 55px;
+    
+    margin-bottom: 30px;
+    /*border: 1px solid black;*/
+  }
+  nav {
+    justify-content:center;
+    height: 80px;
+  }
+}
+
