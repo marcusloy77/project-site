@@ -34,10 +34,13 @@ const Home = () => {
   return (
     <section className="contents">
       <section className="left-col">
-        <h2 className="name">Marcus Loy</h2>
-        <p className="description">I'm a Sydney based software engineer, and I have a passion for technical problem solving. Get in touch!</p>
-        <Button variant='contained' onClick={setContact}>Get In Contact</Button>
-        <Contact/>
+        
+        <div className="home-para">
+          <h2 className="name">Marcus Loy</h2>
+          <p className="description">I'm a Sydney based software engineer, and I have a passion for technical problem solving. Get in touch!</p>
+          <Button variant='contained' onClick={setContact}>Get In Contact</Button>
+          <Contact/>
+        </div>
 
       </section>
       <section className='right-col'>
