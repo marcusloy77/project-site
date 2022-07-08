@@ -1,6 +1,8 @@
 import Button from '@mui/material/Button'
 import TextField from '@mui/material/TextField'
 import { useState } from 'react'
+import programmer from '../images/programmer.png'
+import programmer2 from '../images/programmer2.png'
 
 const Home = () => {
 
@@ -38,7 +40,9 @@ const Home = () => {
         <Contact/>
 
       </section>
-      <section className='right-col'></section>
+      <section className='right-col'>
+        <img className='programmer-img' src={programmer2} alt="" />
+      </section>
       
 
     </section>

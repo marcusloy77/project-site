@@ -2,7 +2,7 @@ import './App.css';
 import { Routes, Route, Link } from 'react-router-dom'
 import { useState } from 'react';
 import Home from './components/Home'
-import Resume from './components/Resume'
+import Dropdown from './components/Dropdown'
 import About from './components/About'
 import Projects from './components/Projects'
 import Socials from './components/Socials'
@@ -12,7 +12,7 @@ import { AiFillHome } from 'react-icons/ai'
 import { BsFillPersonFill } from 'react-icons/bs'
 
 function App() {
-  const [navBarClicked, setNavBarClicked] = useState({home:'nav-op', projects: 'nav-op', about: 'nav-op', socials: 'nav-op', resume: 'nav-op'})
+  const [navBarClicked, setNavBarClicked] = useState({home:'nav-op', projects: 'nav-op', about: 'nav-op', socials: 'nav-op', resume: 'nav-op resume'})
 
   const changeNav = (event) => {
     // let clickedVal = event.target.closest('.nav-op').textContent.toLowerCase().slice(1)
@@ -33,7 +33,8 @@ function App() {
         <div className='nav-elem' onClick={changeNav}><Link className={navBarClicked.about} to='/about'><BsFillPersonFill/><span className='nav-word'> About</span></Link></div>
 
         <div className='nav-elem' onClick={changeNav}><Link className={navBarClicked.socials} to='/socials'><IoShareSocialSharp/><span className='nav-word'> Socials</span></Link></div>
-        <div className='nav-elem' onClick={changeNav}><Link className={navBarClicked.resume} to='/resume'><IoDocumentText/> <span className='nav-word'> Resume</span></Link></div>
+
+        <div className='nav-elem res-pop' onClick={changeNav}><div className={navBarClicked.resume}><IoDocumentText/> <span className='nav-word'> Resume </span></div><Dropdown/></div>
         <div className="spacer2"></div>
       </nav>
 
@@ -42,7 +43,7 @@ function App() {
         <Route path='/projects' element={<Projects/>}></Route>
         <Route path='/about' element={<About/>}></Route>
         <Route path='/socials' element={<Socials/>}></Route>
-        <Route path='/resume' element={<Resume/>}></Route>
+        
       </Routes>
       
     </div>
