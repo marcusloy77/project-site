@@ -1,7 +1,7 @@
 import { FaLinkedinIn } from 'react-icons/fa'
 import { AiFillGithub, AiOutlineDownload } from 'react-icons/ai'
 import { GoEye } from 'react-icons/go'
-import CV from '../files/cv2.pdf'
+import CV from '../images/cv2.pdf'
 const Dropdown = ({isResume}) => {
   console.log(isResume)
   if (isResume) {

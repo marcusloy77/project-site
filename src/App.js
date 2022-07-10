@@ -12,10 +12,7 @@ import { BsFillPersonFill } from 'react-icons/bs'
 
 function App() {
   const [navBarClicked, setNavBarClicked] = useState({home:'nav-op norm', projects: 'nav-op norm', about: 'nav-op norm', socials: 'nav-op', resume: 'nav-op resume'})
-  document.title = 'Marcus Loy'
 
-  const changeNav = (event) => {
-  }
 
   return (
     <div className="App">
