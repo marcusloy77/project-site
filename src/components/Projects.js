@@ -54,11 +54,11 @@ const Projects = () => {
           <p className="proj-date">29 May, 2022</p>
           <p className="proj-desc">Full stack application movie database application, with the main feature being a countdown until said movie is released in theatres. Also includes a login and favourite system.</p>
           <p className="proj-tech-stack"><GoRuby/> Ruby, <FaRedhat/> Sinatra, <SiPostgresql/> PSQL, <FaCss3Alt/> CSS</p>
-          <div className="links"> <a className="appLink" href="https://github.com/marcusloy77/movie-countdown" target="_blank" rel="noreferrer"><AiFillGithub/> Github</a> <a className="appLink" href="https://ancient-brook-21026.herokuapp.com/" target="_blank" rel="noreferrer"><AiOutlineDeploymentUnit/> Demo</a></div>
+          <div className="links"> <a className="appLink" href="https://github.com/marcusloy77/movie-countdown" target="_blank" rel="noreferrer"><AiFillGithub/> Github</a> <a className="appLink" href="https://movie-countdown.herokuapp.com/" target="_blank" rel="noreferrer"><AiOutlineDeploymentUnit/> Demo</a></div>
         </div>
         <div></div>
         <div className="demoImg">
-          <a href="https://chatterbox-message-app.herokuapp.com/" target="_blank" rel="noreferrer"><img className='projPic1' src={movieCountdown} alt="application screenshot" /></a>
+          <a href="https://movie-countdown.herokuapp.com//" target="_blank" rel="noreferrer"><img className='projPic1' src={movieCountdown} alt="application screenshot" /></a>
         </div>
       </div>
       <div className="project">
@@ -71,7 +71,7 @@ const Projects = () => {
         </div>
         <div></div>
         <div className="demoImg">
-          <a href="https://chatterbox-message-app.herokuapp.com/" target="_blank" rel="noreferrer"><img className='projPic1' src={streetFighter} alt="application screenshot" /></a>
+          <a href="https://marcusloy77.github.io/tic-tac-toe/" target="_blank" rel="noreferrer"><img className='projPic1' src={streetFighter} alt="application screenshot" /></a>
         </div>
       </div>
 

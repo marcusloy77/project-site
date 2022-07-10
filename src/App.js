@@ -12,7 +12,8 @@ import { AiFillHome } from 'react-icons/ai'
 import { BsFillPersonFill } from 'react-icons/bs'
 
 function App() {
-  const [navBarClicked, setNavBarClicked] = useState({home:'nav-op', projects: 'nav-op', about: 'nav-op', socials: 'nav-op', resume: 'nav-op resume'})
+  const [navBarClicked, setNavBarClicked] = useState({home:'nav-op norm', projects: 'nav-op norm', about: 'nav-op norm', socials: 'nav-op', resume: 'nav-op resume'})
+  document.title = 'Marcus Loy'
 
   const changeNav = (event) => {
     // let clickedVal = event.target.closest('.nav-op').textContent.toLowerCase().slice(1)
@@ -32,9 +33,10 @@ function App() {
 
         <div className='nav-elem' onClick={changeNav}><Link className={navBarClicked.about} to='/about'><BsFillPersonFill/><span className='nav-word'> About</span></Link></div>
 
-        <div className='nav-elem' onClick={changeNav}><Link className={navBarClicked.socials} to='/socials'><IoShareSocialSharp/><span className='nav-word'> Socials</span></Link></div>
+        <div className='nav-elem res-pop' onClick={changeNav}><div className={navBarClicked.resume}><IoShareSocialSharp/> <span className='nav-word'> Socials </span></div><Dropdown isResume={false}/></div>
+        
 
-        <div className='nav-elem res-pop' onClick={changeNav}><div className={navBarClicked.resume}><IoDocumentText/> <span className='nav-word'> Resume </span></div><Dropdown/></div>
+        <div className='nav-elem res-pop' onClick={changeNav}><div className={navBarClicked.resume}><IoDocumentText/> <span className='nav-word'> Resume </span></div><Dropdown isResume={true}/></div>
         <div className="spacer2"></div>
       </nav>
 

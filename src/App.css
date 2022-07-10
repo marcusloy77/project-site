@@ -10,6 +10,23 @@ body {
   background-color: var(--col2);
 }
 
+a:link {
+  text-decoration: none;
+  color: inherit;
+}
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
 .App {
   text-align: center;
 }
@@ -36,7 +53,6 @@ body {
 
 nav {
   background-color: var(--col4);
-  
   position: fixed; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
   width: 100%; /* Full width */
@@ -102,10 +118,11 @@ section .right-col {
   position: relative;
 }
 .pdf {
-  margin-bottom: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
-.resume-popout {
+.popout {
   display: none;
   position: absolute;
   
@@ -113,6 +130,7 @@ section .right-col {
   width: 100%;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
+  padding-bottom: 10px;
 }
 
 .dropdown-text {
@@ -120,11 +138,21 @@ section .right-col {
   text-decoration-line: none;
   font-style: unset;
   font-size: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+
+}
+.dropdown-text-alt {
+  display: none;
 }
 
-.res-pop:hover .resume-popout {
+.res-pop:hover .popout {
   display: block;
+}
+.res-pop:hover .popout {
+  animation-name: nav-hover;
+  animation-duration: 0.55s;
+  background-color: var(--col5);
+  color: black;
 }
 
 
@@ -142,6 +170,8 @@ section .right-col {
   }
 }
 @media (min-width: 1200px) {
+
+
   
   p.description {
     font-size: 40px;
@@ -162,27 +192,61 @@ section .right-col {
     width: 600px;
     margin-right: 0;
   }
+
 }
 
 @media (max-width: 800px) {
+  .popout {
+    margin-top: 38px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
 
+  .programmer-img {
+    width: 300px;
+    margin-right: 0;
+  }
   section .left-col {
-    margin-left: 0%;
+    margin-left: 3%;
+    margin-right: 3%;
   }
   .nav-word {
     display: none;
-  }
-  .nav-op {
-
-    height: 30px;
-    font-size: 55px;
-    
-    margin-bottom: 30px;
-    /*border: 1px solid black;*/
   }
   nav {
     justify-content:center;
     height: 80px;
   }
+  .nav-op {
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 30px;
+    font-size: 55px;
+  }
+  
 }
+@media (max-width: 540px) {
+  .dropdown-text {
+    display: none;
+  }
+  .keep {
+    display: block;
+    font-size: 15px;
+    text-decoration-line:none ;
+  }
+  .dropdown-text-alt {
+    display: block;
+    font-size: 15px;
+  }
+  .nav-op {
+    padding-left: 9px;
+    padding-right: 9px;
+  }
 
+  .spacer2 {
+    margin-right: 5px;
+  }
+  .spacer {
+    margin-left: 5px;
+  }
+}
