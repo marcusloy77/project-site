@@ -1,9 +1,7 @@
-import { Routes, Route, Link } from 'react-router-dom'
-import { useState } from 'react';
-import './Resume.css'
-import Resume from './Resume'
 import { FaLinkedinIn } from 'react-icons/fa'
-import { AiFillGithub } from 'react-icons/ai'
+import { AiFillGithub, AiOutlineDownload } from 'react-icons/ai'
+import { GoEye } from 'react-icons/go'
+import CV from '../files/cv2.pdf'
 const Dropdown = ({isResume}) => {
   console.log(isResume)
   if (isResume) {
@@ -11,12 +9,12 @@ const Dropdown = ({isResume}) => {
       
         <div className="dropdown">
           <div className="popout">
-            <div className="pdf downloadPdf"> <span className='dropdown-text'>Download PDF </span> <span className='dropdown-text-alt'>Download Resume </span> </div>
-            <Link className="pdf viewPdf"  to='/resume'><span className='dropdown-text'>View PDF</span> <span className='dropdown-text-alt'>View Resume </span> </Link>
+            <div className="pdf downloadPdf"> <a href={CV} download> <AiOutlineDownload/> <span className='dropdown-text'> Download PDF </span> <span className='dropdown-text-alt'> Download Resume </span> </a> </div>
+            <div className="pdf viewPdf"> <a href={CV} target="_blank" rel="noreferrer"> <GoEye/><span className='dropdown-text'> View PDF</span> <span className='dropdown-text-alt'>View Resume </span> </a> </div>
+            <div className="spacer3"></div>
+
           </div>
-          <Routes>
-            <Route path='/resume' element={<Resume/>}/>
-          </Routes>
+          
         </div>
     )
 }
