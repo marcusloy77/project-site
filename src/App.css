@@ -4,10 +4,12 @@
   --col3:  #d9b08c;
   --col1: #ffcb9a;
   --col5: #d1e8e2;
+  --col6: rgb(240, 258, 245);
 }
 
 body {
   background-color: var(--col2);
+  color: var(--col5);
 }
 
 a:link {
@@ -40,7 +42,7 @@ a:active {
   padding-left: 30px;
 }
 .clicked {
-  border-bottom: 3px solid aliceblue;
+  border-bottom: 3px solid var(--col6);
 }
 
 .nav-word {
@@ -57,7 +59,7 @@ nav {
   top: 0; /* Position the navbar at the top of the page */
   width: 100%; /* Full width */
   height: 40px;
-  color: aliceblue;
+  color: var(--col6);
   border-bottom: #d1e8e2 1px solid;
   display: flex;
   justify-content: space-evenly;
@@ -73,7 +75,7 @@ nav {
 @keyframes nav-hover {
   from {
     background-color: var(--col2);
-    color: aliceblue;
+    color: var(--col6);
   }
   to {
     background-color: var(--col5);

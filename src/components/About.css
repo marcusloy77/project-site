@@ -1,0 +1,39 @@
+.caro {
+  margin-top: 100px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.col {
+  margin-left: 10%;
+  margin-right: 10%;
+  text-align: left;
+  font-size: 20px;
+}
+
+.writing-section {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.title {
+  font-size: 35px;
+}
+
+.me {
+  width: 400px;
+  border-radius: 50%;
+  background-color: var(--col4);
+  border: 2px solid var(--col5);
+  margin-top: 10%;
+}
+
+.sub-title {
+  font-size: 28px;
+  text-align: center;
+}
