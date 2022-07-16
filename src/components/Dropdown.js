@@ -5,7 +5,7 @@ import { MdEmail } from 'react-icons/md'
 import CV from './cv2.pdf'
 
 const Dropdown = ({isResume}) => {
-  if (isResume) {
+  if (isResume == 1) {
     return (
         <div className="dropdown">
           <div className="popout">
@@ -19,7 +19,7 @@ const Dropdown = ({isResume}) => {
         </div>
     )
 }
-  else {
+  else if (isResume === 0) {
     return (
       <div className="dropdown">
         <div className="popout">
@@ -29,6 +29,17 @@ const Dropdown = ({isResume}) => {
         </div>
       </div>
   )
+  }
+
+  else if (isResume === 2) {
+    return (<div className="dropdown">
+        <div className="popout">
+          <div className="pdf cyber"> <div className='dropdown-line'> <FaLinkedinIn/> <span className='dropdown-text keep'>Cyber</span> </div> </div>
+          <div className="pdf clean"> <div className='dropdown-line'> <AiFillGithub/> <span className='dropdown-text keep'>Clean</span> </div> </div>
+          <div className="pdf warm">  <div className='dropdown-line'> <MdEmail/> <span className='dropdown-text keep'>Dark</span> </div>  </div>
+        </div>
+      </div>
+    )
   }
 }
 

@@ -24,10 +24,13 @@ function App() {
 
         <div className='nav-elem'><Link className={navBarClicked.about} to='/about'><BsFillPersonFill/><span className='nav-word'> About</span></Link></div>
 
-        <div className='nav-elem res-pop'><div className={navBarClicked.resume}><IoShareSocialSharp/> <span className='nav-word'> Socials </span></div><Dropdown isResume={false}/></div>
+        <div className='nav-elem res-pop'><div className={navBarClicked.resume}><IoShareSocialSharp/> <span className='nav-word'> Socials </span></div><Dropdown isResume={0}/></div>
         
 
-        <div className='nav-elem res-pop'><div className={navBarClicked.resume}><IoDocumentText/> <span className='nav-word'> Resume </span></div><Dropdown isResume={true}/></div>
+        <div className='nav-elem res-pop'><div className={navBarClicked.resume}><IoDocumentText/> <span className='nav-word'> Resume </span></div><Dropdown isResume={1}/></div>
+
+        <div className='nav-elem res-pop'><div className={navBarClicked.resume}><IoDocumentText/> <span className='nav-word'> Themes </span></div><Dropdown isResume={2}/></div>
+
         <div className="spacer2"></div>
       </nav>
 

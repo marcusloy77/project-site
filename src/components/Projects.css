@@ -1,9 +1,17 @@
 :root {
+  --col2: #0E0B16;
+  --col4: #4717F6;
+  --col3:  #A239Ca;
+  --col1: #ffcb9a;
+  --col5: #E7DFDD;
+
+  /*
   --col2: #2c3531;
   --col4: #116466;
   --col3:  #d9b08c;
   --col1: #ffcb9a;
   --col5: #d1e8e2;
+  */
 }
 
 
@@ -12,6 +20,13 @@
   margin-right: 10%;
   margin-top: 80px;
   color: var(--col5);
+  
+}
+
+
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% { opacity: 100%;}
 }
 
 .appLink {
@@ -23,6 +38,7 @@
 }
 
 .project {
+  animation: fadeIn 3s;
   display: grid;
   grid-template-columns: 5fr 1fr 5fr;
   margin-bottom: 50px;
