@@ -4,7 +4,8 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router } from 'react-router-dom'
-
+console.log("Hey There! Hope you're enjoying my project app! Got any questions/queries? Email me on marcus.loy.77@gmail.com or message me on linkedIn, I'm always keen to talk to devs!")
+document.body.classList = 'light-theme'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

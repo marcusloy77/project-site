@@ -2,9 +2,12 @@ import { FaLinkedinIn } from 'react-icons/fa'
 import { AiFillGithub, AiOutlineDownload } from 'react-icons/ai'
 import { GoEye } from 'react-icons/go'
 import { MdEmail } from 'react-icons/md'
+import { GiCyberEye } from 'react-icons/gi'
+import { FaGlassMartiniAlt } from 'react-icons/fa'
+import { BsFillSunFill } from 'react-icons/bs'
 import CV from './cv2.pdf'
 
-const Dropdown = ({isResume}) => {
+const Dropdown = ({isResume, cyberThemeClicked, lightThemeClicked, velvetThemeClicked}) => {
   if (isResume == 1) {
     return (
         <div className="dropdown">
@@ -34,9 +37,8 @@ const Dropdown = ({isResume}) => {
   else if (isResume === 2) {
     return (<div className="dropdown">
         <div className="popout">
-          <div className="pdf cyber"> <div className='dropdown-line'> <FaLinkedinIn/> <span className='dropdown-text keep'>Cyber</span> </div> </div>
-          <div className="pdf clean"> <div className='dropdown-line'> <AiFillGithub/> <span className='dropdown-text keep'>Clean</span> </div> </div>
-          <div className="pdf warm">  <div className='dropdown-line'> <MdEmail/> <span className='dropdown-text keep'>Dark</span> </div>  </div>
+          <div className="pdf cyber" onClick={cyberThemeClicked}> <div className='dropdown-line'> <span><GiCyberEye/></span> <span className='dropdown-text keep'>Cyber</span> </div> </div>
+          <div className="pdf warm" onClick={velvetThemeClicked}>  <div className='dropdown-line'> <span><FaGlassMartiniAlt/></span>  <span className='dropdown-text keep'>Velvet</span> </div>  </div>
         </div>
       </div>
     )

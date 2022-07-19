@@ -7,35 +7,54 @@ import About from './components/About'
 import Projects from './components/Projects'
 import { IoIosApps } from 'react-icons/io';
 import { IoShareSocialSharp, IoDocumentText } from 'react-icons/io5';
-import { AiFillHome } from 'react-icons/ai'
+import { AiFillHome, AiFillHighlight } from 'react-icons/ai'
 import { BsFillPersonFill } from 'react-icons/bs'
+import programmerVelvet from './images/programmerVelvet.png'
+import programmerCyber from './images/programmerCyber.png'
+
 
 function App() {
-  const [navBarClicked, setNavBarClicked] = useState({home:'nav-op norm', projects: 'nav-op norm', about: 'nav-op norm', socials: 'nav-op', resume: 'nav-op resume'})
+  const [navBarClicked, setNavBarClicked] = useState({app: 'App', home:'nav-op norm', projects: 'nav-op norm', about: 'nav-op norm', socials: 'nav-op', resume: 'nav-op resume'})
+  
+  const [programmer, setProgrammer] = useState(programmerCyber)
+
+
+  const velvetThemeClicked = () => {
+    document.body.classList = 'velvet-theme'
+    setProgrammer(programmerVelvet)
+  }
+  const lightThemeClicked = () => {
+    document.body.classList = 'light-theme'
+    setProgrammer(programmerVelvet)
+  }
+  const cyberThemeClicked = () => {
+    document.body.classList = 'cyber-theme'
+    setProgrammer(programmerCyber)
+  }
 
 
   return (
-    <div className="App">
+    <div className={navBarClicked.app}>
       <nav className='nav'>
         <div className='spacer'></div>
-        <div className='nav-elem'><Link className={navBarClicked.home} to='/'><AiFillHome/><span className='nav-word'> Home</span></Link></div>
+        <div className='nav-elem'><Link className={navBarClicked.home} to='/'> <span className='nav-icon'><AiFillHome/></span><span className='nav-word'> Home</span></Link></div>
 
-        <div className='nav-elem'><Link className={navBarClicked.projects} to='/projects'><IoIosApps/> <span className='nav-word'> Projects</span></Link></div>
+        <div className='nav-elem'><Link className={navBarClicked.projects} to='/projects'> <span className='nav-icon' alt='Projects Icon'><IoIosApps/></span> <span className='nav-word'> Projects</span></Link></div>
 
-        <div className='nav-elem'><Link className={navBarClicked.about} to='/about'><BsFillPersonFill/><span className='nav-word'> About</span></Link></div>
+        <div className='nav-elem'><Link className={navBarClicked.about} to='/about'> <span className='nav-icon' alt='About Icon'><BsFillPersonFill/></span><span className='nav-word'> About</span></Link></div>
 
-        <div className='nav-elem res-pop'><div className={navBarClicked.resume}><IoShareSocialSharp/> <span className='nav-word'> Socials </span></div><Dropdown isResume={0}/></div>
+        <div className='nav-elem res-pop'><div className={navBarClicked.resume}>  <span className='nav-icon' alt='Socials Icon'><IoShareSocialSharp/> </span><span className='nav-word'> Socials </span></div><Dropdown isResume={0} cyberThemeClicked={cyberThemeClicked} lightThemeClicked={lightThemeClicked} velvetThemeClicked={velvetThemeClicked}/></div>
         
 
-        <div className='nav-elem res-pop'><div className={navBarClicked.resume}><IoDocumentText/> <span className='nav-word'> Resume </span></div><Dropdown isResume={1}/></div>
+        <div className='nav-elem res-pop'><div className={navBarClicked.resume}> <span className='nav-icon' alt='Resume Icon'><IoDocumentText/></span> <span className='nav-word'> Resume </span></div><Dropdown isResume={1} cyberThemeClicked={cyberThemeClicked} lightThemeClicked={lightThemeClicked} velvetThemeClicked={velvetThemeClicked}/></div>
 
-        <div className='nav-elem res-pop'><div className={navBarClicked.resume}><IoDocumentText/> <span className='nav-word'> Themes </span></div><Dropdown isResume={2}/></div>
+        <div className='nav-elem res-pop'><div className={navBarClicked.resume}> <span className='nav-icon' alt='Themes Icon'><AiFillHighlight/></span> <span className='nav-word'> Themes </span></div><Dropdown isResume={2} cyberThemeClicked={cyberThemeClicked} lightThemeClicked={lightThemeClicked} velvetThemeClicked={velvetThemeClicked}/></div>
 
         <div className="spacer2"></div>
       </nav>
 
       <Routes>
-        <Route path='/' element={<Home/>}></Route>
+        <Route path='/' element={<Home programmer={programmer}/>}></Route>
         <Route path='/projects' element={<Projects/>}></Route>
         <Route path='/about' element={<About/>}></Route>
         

@@ -1,7 +1,7 @@
 import Button from '@mui/material/Button'
-import programmer2 from '../images/programmer2.png'
 
-const Home = () => {
+
+const Home = ({programmer}) => {
   return (
     <section className="contents">
       <section className="left-col">
@@ -15,7 +15,7 @@ const Home = () => {
 
       </section>
       <section className='right-col'>
-        <img className='programmer-img' src={programmer2} alt="" />
+        <img className='programmer-img' src={programmer} alt="programmer at work" />
       </section>
       
 
