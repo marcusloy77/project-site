@@ -7,7 +7,7 @@ import { FaGlassMartiniAlt } from 'react-icons/fa'
 import CV from '../files/cv2.pdf'
 
 const Dropdown = ({isResume, cyberThemeClicked, lightThemeClicked, velvetThemeClicked}) => {
-  if (isResume == 1) {
+  if (isResume === 1) {
     return (
         <div className="dropdown">
           <div className="popout">
