@@ -1,16 +1,14 @@
 import './About.css'
-import prof from '../images/Prof.png'
+import hawaii from '../images/hawaiiImg.png'
 
 const About = () => {
   return (
     <div className="caro">
       <div className="writing-section">
-        <div className="left-col-about">
-          <img className='me' src={prof} alt="img" />
-        </div>
+      <h3 className='title'>About Me</h3>
+          <img className='me' src={hawaii} alt="img" />
         <div className="right-col-about">
-          <h3 className='title'>About Me</h3>
-          <p></p>
+          
           <div className="cols">
             <div className="left-col-about-inner col">
               <h4 className='sub-title'>At Work</h4>
@@ -18,7 +16,7 @@ const About = () => {
             </div>
             <div className="right-col-about-inner col">
               <h4 className='sub-title'>Outside of Work</h4>
-              <p>I've long had a passion for sports, both watching and playing. Basketball and bouldering are my most recent favourites, but I'll try and get outside whenever I have the energy. When that fails, settling into the latest Marvel iteration or gaming helps me relax.</p>
+              <p>I've long had a passion for the outdoors, and love to get hiking in my time off. Basketball and bouldering are my most recent sporting activities, but I'll try and get outside whenever I have the energy. When that fails, settling into the latest Marvel iteration or gaming helps me relax.</p>
             </div>
           </div>
         </div>

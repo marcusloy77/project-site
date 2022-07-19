@@ -4,7 +4,9 @@
   margin-right: 10%;
   margin-top: 80px;
   color: var(--col1);
-  
+
+  justify-content: center;
+  align-items: center;
 }
 
 
@@ -30,6 +32,7 @@
   border-radius: 25px;
   background-color: var(--projBoxCol);
   padding: 10px;
+
   overflow: hidden;
 }
 

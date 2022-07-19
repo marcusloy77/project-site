@@ -1,5 +1,5 @@
 import chatterbox from '../images/chatterbox.png'
-import pcBuild1 from '../images/pc-build-main.png'
+
 import pcBuild2 from '../images/pc-build.png'
 import movieCountdown from '../images/movie-countdown.png'
 import streetFighter from '../images/street-fighter.png'

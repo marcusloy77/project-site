@@ -4,8 +4,7 @@ import { GoEye } from 'react-icons/go'
 import { MdEmail } from 'react-icons/md'
 import { GiCyberEye } from 'react-icons/gi'
 import { FaGlassMartiniAlt } from 'react-icons/fa'
-import { BsFillSunFill } from 'react-icons/bs'
-import CV from './cv2.pdf'
+import CV from '../files/cv2.pdf'
 
 const Dropdown = ({isResume, cyberThemeClicked, lightThemeClicked, velvetThemeClicked}) => {
   if (isResume == 1) {
