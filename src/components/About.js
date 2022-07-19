@@ -7,8 +7,8 @@ const About = () => {
     <div className="caro">
       <div className="writing-section">
       <h3 className='title'>About Me</h3>
-          <img className='me' src={hawaii} alt="img" />
-          <img className='meZoom' src={hawaiiZoom} alt="img" />
+          <img className='me' src={hawaii} alt="Me! Marcus - standing atop the three peaks hike in Hawaii" />
+          <img className='meZoom' src={hawaiiZoom} alt="Me! Marcus - standing atop the three peaks hike in Hawaii" />
         <div className="right-col-about">
           
           <div className="cols">

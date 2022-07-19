@@ -21,6 +21,13 @@
 
 .links {
   margin-bottom: 30px;
+  display: flex;
+  justify-content: left;
+  font-size: 20px;
+  text-decoration: underline;
+}
+.spacer5 {
+  width: 15px;
 }
 
 .project {
