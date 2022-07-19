@@ -39,16 +39,16 @@ function App() {
         <div className='spacer'></div>
         <div className='nav-elem'><Link className={navBarClicked.home} to='/'> <span className='nav-icon'><AiFillHome/></span><span className='nav-word'> Home</span></Link></div>
 
-        <div className='nav-elem'><Link className={navBarClicked.projects} to='/projects'> <span className='nav-icon' alt='Projects Icon'><IoIosApps/></span> <span className='nav-word'> Projects</span></Link></div>
+        <div className='nav-elem'><Link className={navBarClicked.projects} to='/projects'> <span className='icon' alt='Projects Icon'><IoIosApps/></span> <span className='nav-word'> Projects</span></Link></div>
 
-        <div className='nav-elem'><Link className={navBarClicked.about} to='/about'> <span className='nav-icon' alt='About Icon'><BsFillPersonFill/></span><span className='nav-word'> About</span></Link></div>
+        <div className='nav-elem'><Link className={navBarClicked.about} to='/about'> <span className='icon' alt='About Icon'><BsFillPersonFill/></span><span className='nav-word'> About</span></Link></div>
 
-        <div className='nav-elem res-pop'><div className={navBarClicked.resume}>  <span className='nav-icon' alt='Socials Icon'><IoShareSocialSharp/> </span><span className='nav-word'> Socials </span></div><Dropdown isResume={0} cyberThemeClicked={cyberThemeClicked} lightThemeClicked={lightThemeClicked} velvetThemeClicked={velvetThemeClicked}/></div>
+        <div className='nav-elem res-pop'><div className={navBarClicked.resume}>  <span className='icon' alt='Socials Icon'><IoShareSocialSharp/> </span><span className='nav-word'> Socials </span></div><Dropdown isResume={0} cyberThemeClicked={cyberThemeClicked} lightThemeClicked={lightThemeClicked} velvetThemeClicked={velvetThemeClicked}/></div>
         
 
-        <div className='nav-elem res-pop'><div className={navBarClicked.resume}> <span className='nav-icon' alt='Resume Icon'><IoDocumentText/></span> <span className='nav-word'> Resume </span></div><Dropdown isResume={1} cyberThemeClicked={cyberThemeClicked} lightThemeClicked={lightThemeClicked} velvetThemeClicked={velvetThemeClicked}/></div>
+        <div className='nav-elem res-pop'><div className={navBarClicked.resume}> <span className='icon' alt='Resume Icon'><IoDocumentText/></span> <span className='nav-word'> Resume </span></div><Dropdown isResume={1} cyberThemeClicked={cyberThemeClicked} lightThemeClicked={lightThemeClicked} velvetThemeClicked={velvetThemeClicked}/></div>
 
-        <div className='nav-elem res-pop'><div className={navBarClicked.resume}> <span className='nav-icon' alt='Themes Icon'><AiFillHighlight/></span> <span className='nav-word'> Themes </span></div><Dropdown isResume={2} cyberThemeClicked={cyberThemeClicked} lightThemeClicked={lightThemeClicked} velvetThemeClicked={velvetThemeClicked}/></div>
+        <div className='nav-elem res-pop'><div className={navBarClicked.resume}> <span className='icon' alt='Themes Icon'><AiFillHighlight/></span> <span className='nav-word'> Themes </span></div><Dropdown isResume={2} cyberThemeClicked={cyberThemeClicked} lightThemeClicked={lightThemeClicked} velvetThemeClicked={velvetThemeClicked}/></div>
 
         <div className="spacer2"></div>
       </nav>

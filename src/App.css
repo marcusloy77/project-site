@@ -5,7 +5,7 @@
   --bodyTextCol: #E5FFDE;
   --bodyTextCol2: #E5FFDE;
   --linkCol: #BBCBCB;
-  --projBoxCol: rgba(0,0,0,0.4);
+  --projBoxCol: rgba(0,0,0,0.5);
   animation: themeChangeVelvet 1s;
 }
 
@@ -32,7 +32,7 @@
   --bodyTextCol: #d1e8e2;
   --bodyTextCol2: #ffcb9a;
   --linkCol: #d9b08c;
-  --projBoxCol: rgba(0,0,0,0.4);
+  --projBoxCol: rgba(0,0,0,0.6);
 }
 .cyber-theme {
   --navCol: #116466;
@@ -162,7 +162,7 @@ section .right-col {
 
 .contents {
   margin: 0 auto;
-  margin-top: 100px;
+  margin-top: 70px;
   display: grid;
   grid-template-columns: 3fr 4fr;
   max-width: 1500px;
@@ -239,7 +239,7 @@ section .right-col {
   padding: 5px 5px;
 }
 
-.emailIcon {
+.icon {
   padding-top: 3px;
   padding-right: 5px;
 }
@@ -289,7 +289,7 @@ section .right-col {
   }
 }
 
-@media (max-width: 995px) {
+@media (max-width: 1005px) {
   
   .contents {
     display: block;
@@ -375,6 +375,10 @@ section .right-col {
   .dropdown-text-alt {
     display: block;
     font-size: 15px;
+  }
+  .icon {
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
   .nav-op {
     padding-left: 9px;
