@@ -1,5 +1,5 @@
 import chatterbox from '../images/chatterbox.png'
-
+import scraper from '../images/Scraper.png'
 import pcBuild2 from '../images/pc-build.png'
 import movieCountdown from '../images/movie-countdown.png'
 import streetFighter from '../images/street-fighter.png'
@@ -9,8 +9,7 @@ import { DiJavascript } from 'react-icons/di'
 import { BsBootstrapFill } from 'react-icons/bs'
 import { SiExpress, SiPostgresql} from 'react-icons/si'
 import { GoRuby } from 'react-icons/go'
-import { FaRedhat, FaCss3Alt } from 'react-icons/fa'
-import { AiFillGithub, AiOutlineDeploymentUnit } from 'react-icons/ai'
+import { FaRedhat, FaCss3Alt, FaNode } from 'react-icons/fa'
 import './Projects.css'
 
 
@@ -23,14 +22,10 @@ const Projects = () => {
           <h3 className="proj-title">ChatterBox</h3>
           <p className="proj-date">6 July, 2022</p>
           <p className="proj-desc">Full stack messaging app, with login/register, friendlists, message history, a user search engine and unique usernames.</p>
-
           <p className="proj-tech-stack"> <IoLogoReact/> React, <DiJavascript/> Javascript, <SiExpress/> Express, <SiPostgresql/> PSQL, <FaCss3Alt/> CSS</p>
-
-          
           <div className="links"> <a className="appLink" href="https://github.com/marcusloy77/ChatterBox" target="_blank" rel="noreferrer"> Github</a> 
           <div className="spacer5"></div>
           <a className="appLink" href="https://chatterbox-message-app.herokuapp.com/" target="_blank" rel="noreferrer"> Demo</a></div>
-
         </div>
         <div></div>
         <div className="demoImg">
@@ -43,7 +38,6 @@ const Projects = () => {
           <p className="proj-date">11 June, 2022</p>
           <p className="proj-desc">Full stack PC building web app, with login/register, personal saved PC builds, and a large array of webscraped components using another one of my projects found <a className='appLink' href="https://github.com/marcusloy77/Pc-Parts-Web-Scraper" target="_blank" rel="noreferrer">here</a>.</p>
           <p className="proj-tech-stack"> <DiJavascript/> Javascript, <SiExpress/> Express, <SiPostgresql/> PSQL, <BsBootstrapFill/> Bootstrap, <FaCss3Alt/> CSS</p>
-
           <div className="links"> <a className="appLink" href="https://github.com/marcusloy77/PC-Builder" target="_blank" rel="noreferrer"> Github</a>
           <div className="spacer5"></div> 
           <a className="appLink" href="https://pc-builder-greatest.herokuapp.com/" target="_blank" rel="noreferrer"> Demo</a></div>
@@ -53,6 +47,22 @@ const Projects = () => {
           
           <a href="https://pc-builder-greatest.herokuapp.com/" target="_blank" rel="noreferrer"><img className='projPic1' src={pcBuild2} alt="PC Builder application screenshot showing part selection feature" /></a>
         </div>
+      </div>
+      <div className="project">
+        <div className="proj-left-col">
+          <h3 className="proj-title">PC Parts Web Scraper</h3>
+          <p className="proj-date">11 June, 2022</p>
+          <p className="proj-desc">Webscraping support project that scrapes, cleans and stores (in a PSQL database) data involving pc parts <a className='appLink' href="https://github.com/marcusloy77/Pc-Parts-Web-Scraper" target="_blank" rel="noreferrer">here</a>.</p>
+          <p className="proj-tech-stack"> <DiJavascript/> Javascript, <SiPostgresql/> PSQL, <FaNode/> Node </p>
+
+          <div className="links"> <a className="appLink" href="https://github.com/marcusloy77/PC-Builder" target="_blank" rel="noreferrer"> Github</a>
+          <div className="spacer5"></div></div>
+          </div>
+        <div></div>
+        <div className="demoImgBuild">
+          <a href="https://pc-builder-greatest.herokuapp.com/" target="_blank" rel="noreferrer"><img className='projPic1' src={scraper} alt="PC Builder scraper application code" /></a>
+        </div>
+      
       </div>
       <div className="project">
         <div className="proj-left-col">
@@ -87,6 +97,7 @@ const Projects = () => {
 
 
     </div>
+
   )
 }
 

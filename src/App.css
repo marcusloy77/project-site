@@ -240,7 +240,7 @@ section .right-col {
 }
 
 .icon {
-  padding-top: 3px;
+  padding-top: 4px;
   padding-right: 5px;
 }
 
@@ -378,7 +378,12 @@ section .right-col {
   }
   .icon {
     padding-top: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 9px;
+  }
+  .homeMail {
+    padding-top: 4px;
+    padding-right: 5px;
+    padding-bottom: 1px;
   }
   .nav-op {
     padding-left: 9px;
