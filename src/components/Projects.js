@@ -52,15 +52,15 @@ const Projects = () => {
         <div className="proj-left-col">
           <h3 className="proj-title">PC Parts Web Scraper</h3>
           <p className="proj-date">11 June, 2022</p>
-          <p className="proj-desc">Webscraping support project that scrapes, cleans and stores (in a PSQL database) data involving pc parts <a className='appLink' href="https://github.com/marcusloy77/Pc-Parts-Web-Scraper" target="_blank" rel="noreferrer">here</a>.</p>
+          <p className="proj-desc">Webscraping support project that scrapes, cleans and stores (in a PSQL database) data involving pc parts.</p>
           <p className="proj-tech-stack"> <DiJavascript/> Javascript, <SiPostgresql/> PSQL, <FaNode/> Node </p>
 
-          <div className="links"> <a className="appLink" href="https://github.com/marcusloy77/PC-Builder" target="_blank" rel="noreferrer"> Github</a>
+          <div className="links"> <a className="appLink" href="https://github.com/marcusloy77/Pc-Parts-Web-Scraper" target="_blank" rel="noreferrer"> Github</a>
           <div className="spacer5"></div></div>
           </div>
         <div></div>
         <div className="demoImgBuild">
-          <a href="https://pc-builder-greatest.herokuapp.com/" target="_blank" rel="noreferrer"><img className='projPic1' src={scraper} alt="PC Builder scraper application code" /></a>
+          <a href="https://github.com/marcusloy77/Pc-Parts-Web-Scraper" target="_blank" rel="noreferrer"><img className='projPic1' src={scraper} alt="PC Builder scraper application code" /></a>
         </div>
       
       </div>
