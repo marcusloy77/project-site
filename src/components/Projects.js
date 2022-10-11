@@ -3,6 +3,7 @@ import scraper from '../images/Scraper.png'
 import pcBuild2 from '../images/pc-build.png'
 import movieCountdown from '../images/movie-countdown.png'
 import streetFighter from '../images/street-fighter.png'
+import frontContact from '../images/fontContact.png'
 
 import { IoLogoReact } from 'react-icons/io5'
 import { DiJavascript } from 'react-icons/di'
@@ -17,6 +18,21 @@ const Projects = () => {
   return (
     <div className="projects">
       <h2>Projects</h2>
+      <div className="project">
+        <div className="proj-left-col">
+          <h3 className="proj-title">Contact Phone App</h3>
+          <p className="proj-date">11 Oct, 2022</p>
+          <p className="proj-desc">A responsive frontend contact app, drawing random contact data from an api. Created with react, it includes fully responsive pages for contact information, phone dialer, links, themes etc.</p>
+
+          <p className="proj-tech-stack"> <IoLogoReact/> React, <DiJavascript/> Javascript, <FaCss3Alt/> CSS</p>
+
+          <div className="links"> <a className="appLink" href="https://github.com/marcusloy77/contact-frontend" target="_blank" rel="noreferrer"> Github</a> <a className="appLink" href="https://marcus-loy-contact-page.surge.sh/" target="_blank" rel="noreferrer"> Demo</a></div>
+        </div>
+        <div></div>
+        <div className="demoImg">
+          <a href="https://marcus-loy-contact-page.surge.sh/" target="_blank" rel="noreferrer"><img className='projPic1' src={frontContact} alt="application screenshot" /></a>
+        </div>
+      </div>
       <div className="project">
         <div className="proj-left-col">
           <h3 className="proj-title">ChatterBox</h3>
@@ -43,7 +59,7 @@ const Projects = () => {
           <a className="appLink" href="https://pc-builder-greatest.herokuapp.com/" target="_blank" rel="noreferrer"> Demo</a></div>
         </div>
         <div></div>
-        <div className="demoImgBuild">
+        <div className="demoImg">
           
           <a href="https://pc-builder-greatest.herokuapp.com/" target="_blank" rel="noreferrer"><img className='projPic1' src={pcBuild2} alt="PC Builder application screenshot showing part selection feature" /></a>
         </div>
@@ -59,7 +75,7 @@ const Projects = () => {
           <div className="spacer5"></div></div>
           </div>
         <div></div>
-        <div className="demoImgBuild">
+        <div className="demoImg">
           <a href="https://github.com/marcusloy77/Pc-Parts-Web-Scraper" target="_blank" rel="noreferrer"><img className='projPic1' src={scraper} alt="PC Builder scraper application code" /></a>
         </div>
       
