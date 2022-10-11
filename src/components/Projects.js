@@ -26,7 +26,7 @@ const Projects = () => {
 
           <p className="proj-tech-stack"> <IoLogoReact/> React, <DiJavascript/> Javascript, <FaCss3Alt/> CSS</p>
 
-          <div className="links"> <a className="appLink" href="https://github.com/marcusloy77/contact-frontend" target="_blank" rel="noreferrer"> Github</a> <a className="appLink" href="https://marcus-loy-contact-page.surge.sh/" target="_blank" rel="noreferrer"> Demo</a></div>
+          <div className="links"> <a className="appLink" href="https://github.com/marcusloy77/contact-frontend" target="_blank" rel="noreferrer"> Github </a> <div className="spacer5"></div> <a className="appLink" href="https://marcus-loy-contact-page.surge.sh/" target="_blank" rel="noreferrer"> Demo</a></div>
         </div>
         <div></div>
         <div className="demoImg">
